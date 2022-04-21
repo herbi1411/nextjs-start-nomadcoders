@@ -19,3 +19,8 @@ ___
 * \[filename\].module.css를 통해 CSS파일을 삽입할 수 있음
 * CSS파일을 사용할 때는 \[import styles from "css file link"\]를 통해 사용 가능하며, styles.yourclassname을 통해 class를 적용할 수 있음
 * 문자열로 만들면 2개이상의 class를 적용할 수 있음
+
+___
+### 1.5 Styles JSX
+* js파일에서 \<style jsx\> 태그에 백틱문자(\`)를 통해 style 속성을 지정할 수 있음 
+* styles jsx로 지정한 css는 해당 컴포넌트 내부에서만 작동함 (외부 파일에 적용되지 않음)
