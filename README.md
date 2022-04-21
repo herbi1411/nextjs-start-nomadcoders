@@ -13,3 +13,9 @@ ___
 ### 1.3 Routing
 * a태그를 Link에 감싸줘야함
 * useRouter를 통해 pathname을 가져올 수 있음
+
+___
+### 1.4 CSS Modules
+* \[filename\].module.css를 통해 CSS파일을 삽입할 수 있음
+* CSS파일을 사용할 때는 \[import styles from "css file link"\]를 통해 사용 가능하며, styles.yourclassname을 통해 class를 적용할 수 있음
+* 문자열로 만들면 2개이상의 class를 적용할 수 있음
