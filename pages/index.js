@@ -7,9 +7,14 @@ export default function Home(){
 
     return (
     <div>
-        <NavBar/>
+        {/* <NavBar/> */}
         <h1>Hello{counter}</h1>
         <button onClick={() =>{setCounter(prev=>prev+1);}}>+</button>
+        {/* <style jsx global>{`
+            a{
+                color: orange;
+            }
+        `}</style> */}
     </div>
     );
 }

@@ -24,3 +24,10 @@ ___
 ### 1.5 Styles JSX
 * js파일에서 \<style jsx\> 태그에 백틱문자(\`)를 통해 style 속성을 지정할 수 있음 
 * styles jsx로 지정한 css는 해당 컴포넌트 내부에서만 작동함 (외부 파일에 적용되지 않음)
+
+___
+### 1.6 Custom App
+* _app.js 파일을 통해 페이지의 로딩 시 항상 추가할 요소를 지정할 수 있다.
+* 함수명은 정해지지 않았으며 인자값으로는 \{Component, PageProps\}를 받는다.
+* NextJS는 사용자의 component를 _app.js의 component로 받아서 출력한다.
+* 따라서 모든 페이지에 들어가는 요소는 _app.js에 삽입해서, 코드의 중복을 막을 수 있다.
