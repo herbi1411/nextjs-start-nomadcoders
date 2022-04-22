@@ -31,3 +31,8 @@ ___
 * 함수명은 정해지지 않았으며 인자값으로는 \{Component, PageProps\}를 받는다.
 * NextJS는 사용자의 component를 _app.js의 component로 받아서 출력한다.
 * 따라서 모든 페이지에 들어가는 요소는 _app.js에 삽입해서, 코드의 중복을 막을 수 있다.
+
+___
+### 2.0 Patterns
+* NextJS에서는 컴포넌트에서 children을 받아서, 다른 컴포넌트에서 자신을 사용할 때 같이 쓰는 하위 컴포넌트들 받아올 수 있음
+* Head 태그를 통해 웹페이티 탭의 제목을 설정할 수 있음 (title 태그 같이 사용)

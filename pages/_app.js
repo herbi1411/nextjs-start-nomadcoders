@@ -1,14 +1,11 @@
 import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 export default function appp({Component, PageProps}){
-    return <>
-        <NavBar/>
-        <Component {...PageProps}/>
-        <span>Hello!!</span>
-        <style jsx global>{`
-            a{
-                color: orange;
-            }
-        `}</style>
-        </>
+    return  (
+        <Layout>
+            <Component {...PageProps}/>
+            <span>Hello!!</span>
+        </Layout>
+    )
 }
