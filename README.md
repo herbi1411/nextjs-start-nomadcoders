@@ -41,3 +41,8 @@ ___
 ### 2.1 Fetching Data
 * 영화 API를 통해 목록으로 뿌리기
 * 내부에서 함수를 선언하고 ()를 통해 바로 실행하는 문법
+
+___
+### 2.2 Redirect and Rewrite
+* config파일에서 특정경로에 대한 redirect 설정을 할 수 있음
+* redirect는 user가 path의 변경을 알 수 있지만, rewrite는 user가 path의 변경을 알 수 없음
