@@ -46,3 +46,9 @@ ___
 ### 2.2 Redirect and Rewrite
 * config파일에서 특정경로에 대한 redirect 설정을 할 수 있음
 * redirect는 user가 path의 변경을 알 수 있지만, rewrite는 user가 path의 변경을 알 수 없음
+
+___
+### 2.3 Server Side Rendering
+* NextJS에서 getServerSideProps함수를 삽입해서 server side rendering을 할 수 있다.
+* 현재까지의 프로젝트 구조에서는 client쪽에서 영화api로 부터 정보를 받아 출력을했고, 받기 전까지 loading을 보여주는 구조였다.
+* 하지만 server side rendering을 하면 서버에서 정보를 다 받은 다음에 client에게 넘길 수 있다.
