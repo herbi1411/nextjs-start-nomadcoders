@@ -3,7 +3,6 @@ import NavBar from "../components/NavBar";
 import Seo from "../components/Seo";
 
 export default function Home({results}){
-    console.log(results);
     return (
     <div className="container">
         {/* <NavBar/> */}
@@ -26,6 +25,9 @@ export default function Home({results}){
           padding: 20px;
           gap: 20px;
         }
+        .movie {
+          cursor: pointer;
+        }
         .movie img {
           max-width: 100%;
           border-radius: 12px;
@@ -44,24 +46,11 @@ export default function Home({results}){
     );
 }
 
-
-export async function getServerSideProps() {
-  const { results } = await (
-    await fetch(`http://localhost:3000/api/movies`)
-  ).json();
+export async function getServerSideProps(){
+  const {results} = await( await fetch('http://localhost:3000/api/movies')).json();
   return {
-    props: {
+    props:{
       results,
     },
   };
 }
-
-
-// export async function getServerSideProps(){
-//   const {results} = await( await fetch('http://localhost:3000/api/movies')).json();
-//   return {
-//     props:{
-//       results,
-//     },
-//   };
-// }

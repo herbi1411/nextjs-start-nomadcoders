@@ -8,14 +8,16 @@ export default function NavBar(){
     // return <nav className={styles.nav}>
     return <nav>
         <img src="/vercel.svg" />
-        <Link href="/">
-            {/* <a className={router.pathname==="/" ? styles.active : ""}>Home</a> */}
-            <a className={router.pathname==="/" ? "active" : ""}>Home</a>
+        <div>
+          <Link href="/">
+              {/* <a className={router.pathname==="/" ? styles.active : ""}>Home</a> */}
+              <a className={router.pathname==="/" ? "active" : ""}>Home</a>
+          </Link>
+          <Link href="/about">
+              {/* <a className={router.pathname==="/about" ? styles.active : ""}>About</a> */}
+              <a className={router.pathname==="/about" ? "active" : ""}>About</a>
         </Link>
-        <Link href="/about">
-            {/* <a className={router.pathname==="/about" ? styles.active : ""}>About</a> */}
-            <a className={router.pathname==="/about" ? "active" : ""}>About</a>
-        </Link>
+        </div>
         <style jsx>{`
         nav {
           display: flex;

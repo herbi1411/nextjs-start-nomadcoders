@@ -52,3 +52,8 @@ ___
 * NextJS에서 getServerSideProps함수를 삽입해서 server side rendering을 할 수 있다.
 * 현재까지의 프로젝트 구조에서는 client쪽에서 영화api로 부터 정보를 받아 출력을했고, 받기 전까지 loading을 보여주는 구조였다.
 * 하지만 server side rendering을 하면 서버에서 정보를 다 받은 다음에 client에게 넘길 수 있다.
+
+___
+### 2.5 Dynamic Routes
+* NextJS에서는 React와 다르게 Router를 사용하지 않고, 폴더 명에 의해 URL을 정할 수 있음
+* 이때 url로 변수를 받고싶은 경우에는 대괄호로 변수명을 감싸서 파일명을 지으면 됨
