@@ -57,3 +57,9 @@ ___
 ### 2.5 Dynamic Routes
 * NextJS에서는 React와 다르게 Router를 사용하지 않고, 폴더 명에 의해 URL을 정할 수 있음
 * 이때 url로 변수를 받고싶은 경우에는 대괄호로 변수명을 감싸서 파일명을 지으면 됨
+
+___
+### 2.6 Movie Detail
+* useRouter를 통해 경로를 push해서 링크를 이동할 수 있다.
+* router에 객체를 push해서, query를 url로 같이 보낼 수 있다.
+* push의 as옵션을 사용하면 query를 보내면서 url에는 안뜨도록 할 수 있다.
